@@ -1,0 +1,10 @@
+<div class="container p-4 mt-5">
+  <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+
+  <div class="row">
+    <h5 class="text-white">Trending Movies</h5>
+    <div class="rowposter mt-3 p-2">
+      <app-task *ngFor="let t of trendingMovieResult" [task]="t"></app-task>
+    </div>
+  </div>
+</div>
